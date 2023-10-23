@@ -1,0 +1,61 @@
+
+ body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            text-align: center;
+            counter-reset: wordCounter; /* Initialize the counter here */
+        }
+        .word-container {
+            position: relative; /* Added to position the number */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .word-container::before {
+            content: counter(wordCounter); /* Use CSS counter */
+            counter-increment: wordCounter; /* Increment the counter */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007BFF;
+            color: #FFF;
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        .pronunciation-container {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+        .pronunciation-box {
+            flex: 1;
+            padding: 10px 5px;
+            text-align: center;
+        }
+        .word {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .pronunciation {
+            font-size: 18px;
+            color: #777;
+        }
+        .sentence {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .play-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #FFF;
+            cursor: pointer;
+        }
