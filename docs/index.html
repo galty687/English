@@ -1,394 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vocabulary readiness for Unit 4</title>
-<link href="style.css" rel="stylesheet"/>
-<style>
-.hidden {
-    display: none;
-}
-</style></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbook Companion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* light blue background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #0056b3; /* darker blue for the title */
+        }
+        .unit-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 660px; /* Adjusted width to fit 4 units */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .unit {
+            background-color: #007bff; /* blue color for the units */
+            color: white;
+            flex-basis: calc(25% - 20px); /* Adjust the width minus the gap */
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .unit:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
 <body>
-<h1>Vocabulary readiness for Unit 4</h1>
-<div class="word-container">
-<div class="word">mastermind</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈmɑːstəˌmaɪnd/</div>
-<button class="play-button" onclick="playSound('audioBritish0')">Play Sound</button>
-<audio id="audioBritish0" src="audio/mastermind_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈmɑːstəˌmaɪnd/</div>
-<button class="play-button" onclick="playSound('audioAmerican0')">Play Sound</button>
-<audio id="audioAmerican0" src="audio/mastermind_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">It doesn't take any special digital expertise to mastermind some complex crimes.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">谋划</div></div>
-<div class="word-container">
-<div class="word">finesse</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/fɪˈnɛs/</div>
-<button class="play-button" onclick="playSound('audioBritish1')">Play Sound</button>
-<audio id="audioBritish1" src="audio/finesse_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/fɪˈnɛs/</div>
-<button class="play-button" onclick="playSound('audioAmerican1')">Play Sound</button>
-<audio id="audioAmerican1" src="audio/finesse_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Setting fire to a computer doesn't require the same finesse as writing a stealthy virus.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">手段 / 策略</div></div>
-<div class="word-container">
-<div class="word">stealthy</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈstɛlθi/</div>
-<button class="play-button" onclick="playSound('audioBritish2')">Play Sound</button>
-<audio id="audioBritish2" src="audio/stealthy_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈstɛlθi/</div>
-<button class="play-button" onclick="playSound('audioAmerican2')">Play Sound</button>
-<audio id="audioAmerican2" src="audio/stealthy_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Setting fire to a computer doesn't require the same finesse as writing a stealthy virus.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">秘密的 / 偷偷摸摸的</div></div>
-<div class="word-container">
-<div class="word">arson</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈɑːsən/</div>
-<button class="play-button" onclick="playSound('audioBritish3')">Play Sound</button>
-<audio id="audioBritish3" src="audio/arson_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈɑːsən/</div>
-<button class="play-button" onclick="playSound('audioAmerican3')">Play Sound</button>
-<audio id="audioAmerican3" src="audio/arson_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">"Old-fashioned" crimes, such as arson.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">纵火</div></div>
-<div class="word-container">
-<div class="word">prosecute</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈprɒsɪkjuːt/</div>
-<button class="play-button" onclick="playSound('audioBritish4')">Play Sound</button>
-<audio id="audioBritish4" src="audio/prosecute_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈprɒsɪkjuːt/</div>
-<button class="play-button" onclick="playSound('audioAmerican4')">Play Sound</button>
-<audio id="audioAmerican4" src="audio/prosecute_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">"Old-fashioned" crimes... can be prosecuted under traditional laws.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">起诉</div></div>
-<div class="word-container">
-<div class="word">malicious</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/məˈlɪʃəs/</div>
-<button class="play-button" onclick="playSound('audioBritish5')">Play Sound</button>
-<audio id="audioBritish5" src="audio/malicious_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/məˈlɪʃəs/</div>
-<button class="play-button" onclick="playSound('audioAmerican5')">Play Sound</button>
-<audio id="audioAmerican5" src="audio/malicious_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">We wouldn't have to deal with malicious intrusions.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">恶意的</div></div>
-<div class="word-container">
-<div class="word">gambit</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈɡæmbɪt/</div>
-<button class="play-button" onclick="playSound('audioBritish6')">Play Sound</button>
-<audio id="audioBritish6" src="audio/gambit_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈɡæmbɪt/</div>
-<button class="play-button" onclick="playSound('audioAmerican6')">Play Sound</button>
-<audio id="audioAmerican6" src="audio/gambit_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Computer crimes—costly to organisations and individuals—include a variety of gambits.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">策略</div></div>
-<div class="word-container">
-<div class="word">diddle</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈdɪdəl/</div>
-<button class="play-button" onclick="playSound('audioBritish7')">Play Sound</button>
-<audio id="audioBritish7" src="audio/diddle_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈdɪdəl/</div>
-<button class="play-button" onclick="playSound('audioAmerican7')">Play Sound</button>
-<audio id="audioAmerican7" src="audio/diddle_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Computer crimes include a variety of gambits, such as virus distribution, data diddling.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">欺骗</div></div>
-<div class="word-container">
-<div class="word">salami</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/səˈlɑːmi/</div>
-<button class="play-button" onclick="playSound('audioBritish8')">Play Sound</button>
-<audio id="audioBritish8" src="audio/salami_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/səˈlɑːmi/</div>
-<button class="play-button" onclick="playSound('audioAmerican8')">Play Sound</button>
-<audio id="audioAmerican8" src="audio/salami_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Computer crimes include a variety of gambits, such as virus distribution, data salami.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">意大利腊肠 / 萨拉米策略</div></div>
-<div class="word-container">
-<div class="word">convict</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/kənˈvɪkt/</div>
-<button class="play-button" onclick="playSound('audioBritish9')">Play Sound</button>
-<audio id="audioBritish9" src="audio/convict_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/kənˈvɪkt/</div>
-<button class="play-button" onclick="playSound('audioAmerican9')">Play Sound</button>
-<audio id="audioAmerican9" src="audio/convict_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">The worm's author was convicted and sentenced to three years' probation.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">宣告…有罪</div></div>
-<div class="word-container">
-<div class="word">probation</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/prəˈbeɪʃən/</div>
-<button class="play-button" onclick="playSound('audioBritish10')">Play Sound</button>
-<audio id="audioBritish10" src="audio/probation_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/prəˈbeɪʃən/</div>
-<button class="play-button" onclick="playSound('audioAmerican10')">Play Sound</button>
-<audio id="audioAmerican10" src="audio/probation_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">The worm's author was convicted and sentenced to three years' probation.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">缓刑</div></div>
-<div class="word-container">
-<div class="word">vilify</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈvɪlɪˌfaɪ/</div>
-<button class="play-button" onclick="playSound('audioBritish11')">Play Sound</button>
-<audio id="audioBritish11" src="audio/vilify_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈvɪlɪˌfaɪ/</div>
-<button class="play-button" onclick="playSound('audioAmerican11')">Play Sound</button>
-<audio id="audioAmerican11" src="audio/vilify_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Although vilified in the media, Mitnick had the support of many hackers and other people who believed that the prosecution grossly exaggerated the extent of his crimes.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">诋毁 / 诟病</div></div>
-<div class="word-container">
-<div class="word">restitution</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˌrɛstɪˈtjuːʃən/</div>
-<button class="play-button" onclick="playSound('audioBritish12')">Play Sound</button>
-<audio id="audioBritish12" src="audio/restitution_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˌrɛstɪˈtjuːʃən/</div>
-<button class="play-button" onclick="playSound('audioAmerican12')">Play Sound</button>
-<audio id="audioAmerican12" src="audio/restitution_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Mitnick was ordered to pay restitution in the amount of $4,125.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">赔偿 / 归还</div></div>
-<div class="word-container">
-<div class="word">innocuous</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ɪˈnɒkjuəs/</div>
-<button class="play-button" onclick="playSound('audioBritish13')">Play Sound</button>
-<audio id="audioBritish13" src="audio/innocuous_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ɪˈnɒkjuəs/</div>
-<button class="play-button" onclick="playSound('audioAmerican13')">Play Sound</button>
-<audio id="audioAmerican13" src="audio/innocuous_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Mitnick's crimes were curiously innocuous.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">无害的</div></div>
-<div class="word-container">
-<div class="word">pilfer</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈpɪlfə/</div>
-<button class="play-button" onclick="playSound('audioBritish14')">Play Sound</button>
-<audio id="audioBritish14" src="audio/pilfer_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈpɪlfə/</div>
-<button class="play-button" onclick="playSound('audioAmerican14')">Play Sound</button>
-<audio id="audioAmerican14" src="audio/pilfer_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">He pilfered software—but in doing so left it behind.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">小偷小摸</div></div>
-<div class="word-container">
-<div class="word">allegedly</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/əˈlɛdʒɪdli/</div>
-<button class="play-button" onclick="playSound('audioBritish15')">Play Sound</button>
-<audio id="audioBritish15" src="audio/allegedly_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/əˈlɛdʒɪdli/</div>
-<button class="play-button" onclick="playSound('audioAmerican15')">Play Sound</button>
-<audio id="audioAmerican15" src="audio/allegedly_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">The Romanian was allegedly angered by his treatment by one of his professors.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">据称</div></div>
-<div class="word-container">
-<div class="word">assault</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/əˈsɔːlt/</div>
-<button class="play-button" onclick="playSound('audioBritish16')">Play Sound</button>
-<audio id="audioBritish16" src="audio/assault_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/əˈsɔːlt/</div>
-<button class="play-button" onclick="playSound('audioAmerican16')">Play Sound</button>
-<audio id="audioAmerican16" src="audio/assault_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Instead of assaulting another human being, the criminal would get the same or an even harsher sentence.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">攻击</div></div>
-<div class="word-container">
-<div class="word">cyber-hacking</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ˈsaɪbər-ˈhækɪŋ/</div>
-<button class="play-button" onclick="playSound('audioBritish17')">Play Sound</button>
-<audio id="audioBritish17" src="audio/cyber-hacking_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ˈsaɪbər-ˈhækɪŋ/</div>
-<button class="play-button" onclick="playSound('audioAmerican17')">Play Sound</button>
-<audio id="audioAmerican17" src="audio/cyber-hacking_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">Cyber-hacking is a crime.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">网络黑客攻击</div></div>
-<div class="word-container">
-<div class="word">prank</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/præŋk/</div>
-<button class="play-button" onclick="playSound('audioBritish18')">Play Sound</button>
-<audio id="audioBritish18" src="audio/prank_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/præŋk/</div>
-<button class="play-button" onclick="playSound('audioAmerican18')">Play Sound</button>
-<audio id="audioAmerican18" src="audio/prank_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">As moderately bothersome entities whose pranks are tolerated by the computer community.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">恶作剧</div></div>
-<div class="word-container">
-<div class="word">glitch</div>
-<div class="pronunciation-container">
-<div class="pronunciation-box">
-<div class="pronunciation-label">British Pronunciation</div>
-<div class="pronunciation">/ɡlɪtʃ/</div>
-<button class="play-button" onclick="playSound('audioBritish19')">Play Sound</button>
-<audio id="audioBritish19" src="audio/glitch_gb.mp3"></audio>
-</div>
-<div class="pronunciation-box">
-<div class="pronunciation-label">American Pronunciation</div>
-<div class="pronunciation">/ɡlɪtʃ/</div>
-<button class="play-button" onclick="playSound('audioAmerican19')">Play Sound</button>
-<audio id="audioAmerican19" src="audio/glitch_us.mp3"></audio>
-</div>
-</div>
-<div class="sentence">along with software bugs and hardware glitches.</div>
-<button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button><div class="translation hidden">小故障</div></div>
-<script>
-    function playSound(audioId) {
-        const audio = document.getElementById(audioId);
-        audio.play();
-    }
-</script>
-<script>
-function toggleTranslation(button) {
-    var translationDiv = button.nextElementSibling;
-    if (translationDiv.classList.contains('hidden')) {
-        translationDiv.classList.remove('hidden');
-        button.innerText = "Hide Translation";
-    } else {
-        translationDiv.classList.add('hidden');
-        button.innerText = "Show Translation";
-    }
-}
-</script></body>
+    <h1>Textbook Companion</h1>
+    <div class="unit-container">
+        <a href="UNIT1/unit1.html" class="unit">Unit 1</a>
+        <a href="UNIT2/unit2.html" class="unit">Unit 2</a>
+        <a href="UNIT3/unit3.html" class="unit">Unit 3</a>
+        <a href="UNIT4/unit4.html" class="unit">Unit 4</a>
+        <a href="UNIT5/unit5.html" class="unit">Unit 5</a>
+        <a href="UNIT6/unit6.html" class="unit">Unit 6</a>
+        <a href="UNIT7/unit7.html" class="unit">Unit 7</a>
+        <a href="UNIT8/unit8.html" class="unit">Unit 8</a>
+    </div>
+</body>
 </html>

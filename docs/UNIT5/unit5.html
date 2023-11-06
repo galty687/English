@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Vocabulary readiness for Unit 5</title>
+        <link href="style.css" rel="stylesheet" />
+        <style>
+.translation-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.translation {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+</style></head>
+    <body>
+        <h1>Vocabulary readiness for Unit 5</h1>
+        <div class="word-container">
+            <div class="word">unwitting</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/ʌnˈwɪt.ɪŋ/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish0')">Play Sound</button>
+                    <audio id="audioBritish0" src="audio/unwitting_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/ʌnˈwɪt̬.ɪŋ/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican0')">Play Sound</button>
+                    <audio id="audioAmerican0" src="audio/unwitting_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">Unwittingly, these students [who log onto
+                Facebook] have become the subjects of academic research.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">不知情，不知不觉</div></div>
+        <div class="word-container">
+            <div class="word">holy grail</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/ˌhoʊli ˈɡreɪl/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish1')">Play Sound</button>
+                    <audio id="audioBritish1" src="audio/holygrail_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/ˌhoʊli ˈɡreɪl/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican1')">Play Sound</button>
+                    <audio id="audioAmerican1" src="audio/holygrail_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">One of the holy grails of social science is
+                the degree to which taste determines friendship.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">圣杯</div></div>
+        <div class="word-container">
+            <div class="word">cusp</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/kʌsp/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish2')">Play Sound</button>
+                    <audio id="audioBritish2" src="audio/cusp_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/kʌsp/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican2')">Play Sound</button>
+                    <audio id="audioAmerican2" src="audio/cusp_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">We're on the cusp of a new way of doing social
+                science.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">分界点</div></div>
+        <div class="word-container">
+            <div class="word">predecessor</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/ˈpriː.dɪ.ses.ər/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish3')">Play Sound</button>
+                    <audio id="audioBritish3" src="audio/predecessor_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/ˈpred.ə.ses.ɚ/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican3')">Play Sound</button>
+                    <audio id="audioAmerican3" src="audio/predecessor_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">Our predecessors could only dream of the kind
+                of data we have now.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">前辈
+                </div></div>
+        <div class="word-container">
+            <div class="word">irresistible</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/ˌɪr.ɪˈzɪs.tə.bəl/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish4')">Play Sound</button>
+                    <audio id="audioBritish4" src="audio/irresistible_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/ˌɪr.ɪˈzɪs.tə.bəl/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican4')">Play Sound</button>
+                    <audio id="audioAmerican4" src="audio/irresistible_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">Facebook's status has made it an irresistible
+                subject for many types of academic research.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">不可抵抗的</div></div>
+        <div class="word-container">
+            <div class="word">petri dish</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/ˌpiː.tri ˈdɪʃ/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish5')">Play Sound</button>
+                    <audio id="audioBritish5" src="audio/petridish_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/ˌpiː.tri ˈdɪʃ/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican5')">Play Sound</button>
+                    <audio id="audioAmerican5" src="audio/petridish_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">Facebook [has a] role as a petri dish for the
+                social sciences.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">培养皿</div></div>
+        <div class="word-container">
+            <div class="word">popularity</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/ˌpɒp.jʊˈlær.ɪ.ti/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish6')">Play Sound</button>
+                    <audio id="audioBritish6" src="audio/popularity_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/ˌpɑː.pjəˈlær.ə.t̬i/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican6')">Play Sound</button>
+                    <audio id="audioAmerican6" src="audio/popularity_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">Institutions are mining Facebook to test
+                theories about... popularity.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">欢迎度</div></div>
+        <div class="word-container">
+            <div class="word">collective</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/kəˈlek.tɪv/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish7')">Play Sound</button>
+                    <audio id="audioBritish7" src="audio/collective_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/kəˈlɛk.tɪv/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican7')">Play Sound</button>
+                    <audio id="audioAmerican7" src="audio/collective_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">Institutions are mining Facebook to test
+                theories about... collective action.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">集体的</div></div>
+        <div class="word-container">
+            <div class="word">perceive</div>
+            <div class="pronunciation-container">
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">British Pronunciation</div>
+                    <div class="pronunciation">/pəˈsiːv/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioBritish8')">Play Sound</button>
+                    <audio id="audioBritish8" src="audio/perceive_gb.mp3"></audio>
+                </div>
+                <div class="pronunciation-box">
+                    <div class="pronunciation-label">American Pronunciation</div>
+                    <div class="pronunciation">/pərˈsiːv/</div>
+                    <button class="play-button"
+                        onclick="playSound('audioAmerican8')">Play Sound</button>
+                    <audio id="audioAmerican8" src="audio/perceive_us.mp3"></audio>
+                </div>
+            </div>
+            <div class="sentence">Researchers learned that people perceive
+                someone who has a high number of friends as popular.</div>
+            <button class="translation-button" onclick="toggleTranslation(this)">Show
+                Translation</button><div class="translation hidden">认为</div></div>
+
+                <div class="word-container">
+                    <div class="word">mediate</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/ˈmiː.di.eɪt/</div>
+                            <button class="play-button" onclick="playSound('audioMediateGb')">Play Sound</button>
+                            <audio id="audioMediateGb" src="audio/mediate_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/ˈmiː.di.eɪt/</div>
+                            <button class="play-button" onclick="playSound('audioMediateUs')">Play Sound</button>
+                            <audio id="audioMediateUs" src="audio/mediate_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">[A] paper was published in The Journal of Computer-Mediated Communication</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">借由，经过</div>
+                </div>
+                
+                <div class="word-container">
+                    <div class="word">perspective</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/pəˈspek.tɪv/</div>
+                            <button class="play-button" onclick="playSound('audioPerspectiveGb')">Play Sound</button>
+                            <audio id="audioPerspectiveGb" src="audio/perspective_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/pərˈspek.tɪv/</div>
+                            <button class="play-button" onclick="playSound('audioPerspectiveUs')">Play Sound</button>
+                            <audio id="audioPerspectiveUs" src="audio/perspective_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">Weak ties are likely to provide people with new perspectives.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">观点</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">originate</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/əˈrɪdʒ.ɪ.neɪt/</div>
+                            <button class="play-button" onclick="playSound('audioOriginateGb')">Play Sound</button>
+                            <audio id="audioOriginateGb" src="audio/originate_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/əˈrɪdʒ.ə.neɪt/</div>
+                            <button class="play-button" onclick="playSound('audioOriginateUs')">Play Sound</button>
+                            <audio id="audioOriginateUs" src="audio/originate_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">Facebook is largely based in real-world relationships that originate in confined communities like campuses.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">起源于</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">ethnicity</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/eθˈnɪs.ɪ.ti/</div>
+                            <button class="play-button" onclick="playSound('audioEthnicityGb')">Play Sound</button>
+                            <audio id="audioEthnicityGb" src="audio/ethnicity_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/eθˈnɪs.ə.ti/</div>
+                            <button class="play-button" onclick="playSound('audioEthnicityUs')">Play Sound</button>
+                            <audio id="audioEthnicityUs" src="audio/ethnicity_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">Facebook is not representative of the ethnicity...of the population at large.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">种族，民族</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">at large</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/æt lɑːdʒ/</div>
+                            <button class="play-button" onclick="playSound('audioAt_largeGb')" disabled>Play Sound</button>
+                            <audio id="audioAt_largeGb" src="audio/at large_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/æt lɑrdʒ/</div>
+                            <button class="play-button" onclick="playSound('audioAt_largeUs')" disabled>Play Sound</button>
+                            <audio id="audioAt_largeUs" src="audio/at large_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">Facebook is not representative of the ethnicity...of the population at large.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">整体</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">have a place</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/hæv ə pleɪs/</div>
+                            <button class="play-button" onclick="playSound('audioHave_a_placeGb')" disabled>Play Sound</button>
+                            <audio id="audioHave_a_placeGb" src="audio/have a place_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/hæv ə pleɪs/</div>
+                            <button class="play-button" onclick="playSound('audioHave_a_placeUs')" disabled>Play Sound</button>
+                            <audio id="audioHave_a_placeUs" src="audio/have a place_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">I don't feel academic research has a place on the website like Facebook</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">有一席之地</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">internist</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/ˈɪn.tə.nɪst/</div>
+                            <button class="play-button" onclick="playSound('audioInternistGb')">Play Sound</button>
+                            <audio id="audioInternistGb" src="audio/internist_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/ˈɪn.tɚ.nɪst/</div>
+                            <button class="play-button" onclick="playSound('audioInternistUs')">Play Sound</button>
+                            <audio id="audioInternistUs" src="audio/internist_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">Dr. Christakis is a sociologist and internist.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">内科医生</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">obesity</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/əʊˈbiː.sɪ.ti/</div>
+                            <button class="play-button" onclick="playSound('audioObesityGb')">Play Sound</button>
+                            <audio id="audioObesityGb" src="audio/obesity_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/oʊˈbiː.sə.ti/</div>
+                            <button class="play-button" onclick="playSound('audioObesityUs')">Play Sound</button>
+                            <audio id="audioObesityUs" src="audio/obesity_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence"> She concluded that the Bassett is socially contagious.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">肥胖症</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">contagious</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/kənˈteɪ.dʒəs/</div>
+                            <button class="play-button" onclick="playSound('audioContagiousGb')">Play Sound</button>
+                            <audio id="audioContagiousGb" src="audio/contagious_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/kənˈteɪ.dʒəs/</div>
+                            <button class="play-button" onclick="playSound('audioContagiousUs')">Play Sound</button>
+                            <audio id="audioContagiousUs" src="audio/contagious_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">She concluded that the Bassett is socially contagious.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">传染的</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">triadic</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/traɪˈæd.ɪk/</div>
+                            <button class="play-button" onclick="playSound('audioTriadicGb')">Play Sound</button>
+                            <audio id="audioTriadicGb" src="audio/triadic_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/traɪˈæd.ɪk/</div>
+                            <button class="play-button" onclick="playSound('audioTriadicUs')">Play Sound</button>
+                            <audio id="audioTriadicUs" src="audio/triadic_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence">Georg Simmel put forth the concept of triadic closure about 100 years ago.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">三角（闭合）</div>
+                </div>
+                <div class="word-container">
+                    <div class="word">adolescent</div>
+                    <div class="pronunciation-container">
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">British Pronunciation</div>
+                            <div class="pronunciation">/ˌæd.əˈles.ənt/</div>
+                            <button class="play-button" onclick="playSound('audioAdolescentGb')">Play Sound</button>
+                            <audio id="audioAdolescentGb" src="audio/adolescent_gb.mp3"></audio>
+                        </div>
+                        <div class="pronunciation-box">
+                            <div class="pronunciation-label">American Pronunciation</div>
+                            <div class="pronunciation">/ˌæd.əˈles.ənt/</div>
+                            <button class="play-button" onclick="playSound('audioAdolescentUs')">Play Sound</button>
+                            <audio id="audioAdolescentUs" src="audio/adolescent_us.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="example-sentence"> Adolescent girls who are socially isolated experience more suicidal thoughts.</div>
+                    <button class="translation-button" onclick="toggleTranslation(this)">Show Translation</button>
+                    <div class="translation hidden">青少年的</div>
+                </div>
+                                                                                    
+
+
+            
+            
+
+       
+        <script>
+    function playSound(audioId) {
+        const audio = document.getElementById(audioId);
+        audio.play();
+    }
+</script>
+        <script>
+function toggleTranslation(button) {
+    var translationDiv = button.nextElementSibling;
+    if (translationDiv.classList.contains('hidden')) {
+        translationDiv.classList.remove('hidden');
+        button.textContent = "Hide Translation";
+    } else {
+        translationDiv.classList.add('hidden');
+        button.textContent = "Show Translation";
+    }
+}
+</script>
+
+</body>
+</html>
