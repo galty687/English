@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary readiness for Unit 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Vocabulary readiness for Unit 4</h1>
+
+$word_entries
+
+<script>
+    function playSound(audioId) {
+        const audio = document.getElementById(audioId);
+        audio.play();
+    }
+</script>
+
+<script>
+    function toggleTranslation(button) {
+        var translationDiv = button.nextElementSibling;
+        if (translationDiv.classList.contains('hidden')) {
+            translationDiv.classList.remove('hidden');
+            button.textContent = "Hide Translation";
+        } else {
+            translationDiv.classList.add('hidden');
+            button.textContent = "Show Translation";
+        }
+    }
+</script>
+
+</body>
+</html>
